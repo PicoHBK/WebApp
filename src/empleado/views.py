@@ -16,10 +16,10 @@ def activar_empleado(request, id):
     messages.success(request, 'Empleado activado correctamente.')
 
     # Comentar el redireccionamiento
-    # return redirect('empleados:listado')
+    return redirect('empleado:listado_empleados')
 
     # Comentar el return
-    # return HttpResponse('Empleado activado correctamente.')
+    return HttpResponse('Empleado activado correctamente.')
     
 
 from django.shortcuts import get_object_or_404
@@ -39,7 +39,7 @@ def desactivar_empleado(request, id):
     messages.success(request, 'Empleado desactivado correctamente.')
 
     # Redireccionar al listado de empleados
-    #return redirect('empleados:listado')
+    return redirect('empleado:listado_empleados')
 
 
 
