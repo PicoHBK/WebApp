@@ -22,9 +22,6 @@ def activar_empleado(request, id):
     return HttpResponse('Empleado activado correctamente.')
     
 
-from django.shortcuts import get_object_or_404
-from django.contrib import messages
-from django.http import HttpResponse
 
 from .models import Empleado
 

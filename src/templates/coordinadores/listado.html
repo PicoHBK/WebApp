@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Listado de Coordinadores</title>
+</head>
+<body>
+    <h1>Listado de Coordinadores</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Número de Documento</th>
+                <th>Fecha de Alta</th>
+                <th>Activo</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for coordinador in coordinadores %}
+            <tr>
+                <td>{{ coordinador.id }}</td>
+                <td>{{ coordinador.nombre }}</td>
+                <td>{{ coordinador.apellido }}</td>
+                <td>{{ coordinador.numero_documento }}</td>
+                <td>{{ coordinador.fecha_alta }}</td>
+                <td>{{ coordinador.activo }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
